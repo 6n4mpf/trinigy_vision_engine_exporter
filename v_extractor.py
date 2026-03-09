@@ -19,7 +19,8 @@ if zip_start == -1:
 else:
     zip_data = payload[zip_start:]
 
-    with open("clean_archive.zip", "wb") as f:
+    with open("v_archive.zip", "wb") as f:
         f.write(zip_data)
+
 
     print("ZIP found near Offset:", zip_start)
